@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(238, 243, 248);
+}
+
+.main-container {
+    padding: 1.2em;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 3px 6px rgb(225, 225, 225);
+    margin: 8px auto;
+}
+
+
+.main-container .upper {
+    padding: 16px;
+    margin: 0.5em auto;
+    height: 40%;
+    width: 90%;
+}
+
+.main-container .lower {
+    padding: 16px;
+    margin: 0.5em auto;
+    height: 60%;
+    width: 90%;
+}
+
+
+.upper input,
+.lower input {
+    outline: 0;
+    width: 100%;
+    font-size: 1em;
+    padding: 1em;
+    height: 2.5em;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    margin-top: 2em;
+}
+
+
+.upper button,
+.lower button {
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(26, 144, 255);
+    width: 12em;
+    height: 2.5em;
+    font-size: 1em;
+    margin-top: 1em;
+
+}
+
+#clearBtn {
+    background-color: rgb(212, 30, 30);
+}
+
+.task-container {
+    max-height: 300px;
+    overflow: auto;
+    margin-top: 1.8em;
+}
+
+.task-container .task {
+    border-radius: 4px;
+    height: 3em;
+    border: 1px solid rgb(200, 215, 233);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    margin-top: 0.3em;
+}
+
+.task-container .task:hover {
+    background-color: rgb(244, 249, 254);
+}
+
+
+.fa-xmark {
+    color: rgb(199, 170, 6);
+}
+
+.fa-xmark:hover {
+    color: red;
+}
+
+
+.upper hr {
+    margin-top: 8em;
+    border: 1px solid rgb(244, 244, 244);
+}
+
+.lower hr {
+    margin-top: 2em;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .main-container {
+        width: 95%;
+        height: 95vh;
+        background-color: white;
+        margin: auto;
+        padding: 0.5em;
+
+    }
+
+    .main-container .upper,
+    .main-container .lower {
+        width: 98%;
+    }
+
+    .main-container .upper {
+        height: 30%;
+    }
+    
+    .upper input {
+        
+        width: 100%;
+        
+    }
+
+    .upper button,
+    .lower button {
+       
+        width: 8em; 
+        font-size: 1em;
+        
+    }
+    
+    .upper hr {
+        margin-top: 4em;
+    }
+
+    .task-container {
+        max-height: 280px;
+   }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .main-container .upper {
+        height: 30%;
+    }
+
+    .upper hr {
+        margin-top: 4em;
+    }
+
+    .task-container {
+        /* border: 1px solid red; */
+        max-height: 280px;
+       
+        /* padding: 2em; */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

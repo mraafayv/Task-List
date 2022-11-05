@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Upper section  -->
+        <section class="upper">
+            <h1>Task List</h1>
+            <input type="text" placeholder="New Task" id="input">
+
+            <button type="submit" id="addBtn" onclick="addTask()">Add Task</button>
+            <hr>
+        </section>
+
+
+        <!-- Lower section  -->
+        <section class="lower">
+            <h1>Tasks</h1>
+
+            <input type="text" placeholder="Filter Tasks" disabled>
+
+            <div class="task-container">
+                
+                <!-- <div class="task">
+                    <p>This is Task 1</p>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="task">
+                    <p>This is Task 2</p>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="task">
+                    <p>This is Task 3</p>
+                    <i class="fa-solid fa-xmark"></i>
+                </div> -->
+
+            </div>
+
+            <hr>
+            <button type="submit" id="clearBtn" onclick="clearTasks()">Clear Tasks</button>
+
+
+        </section>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
