@@ -19,8 +19,8 @@ function addTask() {
 
         let rmvDiv = document.createElement('div');
         rmvDiv.className = 'remove-button';
-        rmvDiv.setAttribute('onclick', 'removeSingleTask(this)');
         let rmvButton = document.createElement('i');
+        rmvButton.setAttribute('onclick', 'removeSingleTask(this)');
         rmvButton.classList.add('fa-solid', 'fa-xmark');
         rmvDiv.appendChild(rmvButton)
 
@@ -37,7 +37,7 @@ function addTask() {
 
 //Removes a single task from list
 function removeSingleTask(elem) {
-    elem.parentElement.remove();
+    elem.parentElement.parentElement.remove();
 }
 
 
