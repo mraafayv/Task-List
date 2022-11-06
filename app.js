@@ -19,6 +19,7 @@ function addTask() {
 
         let rmvDiv = document.createElement('div');
         rmvDiv.className = 'remove-button';
+        rmvDiv.setAttribute('onclick', 'removeSingleTask(this)');
         let rmvButton = document.createElement('i');
         rmvButton.classList.add('fa-solid', 'fa-xmark');
         rmvDiv.appendChild(rmvButton)
@@ -35,14 +36,16 @@ function addTask() {
 
 
 //Removes a single task from list
-function removeSingleTask() {
-    let taskContainer = document.querySelector('.task-container');
-
+function removeSingleTask(elem) {
+    elem.parentElement.remove();
 }
 
 
 //clear all tasks from the list
 function clearTasks() {
+
     let taskContainer = document.querySelector('.task-container');
     taskContainer.innerHTML = '';
+
+
 }
